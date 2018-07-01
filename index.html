@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+
+   <style>
+    p {
+      font-family: 'Eater', cursive;
+      color: rgb(96, 102, 104);
+      font-size: 25pt; 
+}
+
+
+  </style>
+
+</head>
+<body>
+
+    <embed src="おんがく.mp3" autostart="true" class="hide">
+ 
+
+<div id="wrap">
+
+  <div id="modal">
+    <div id="state" class="container text-centered">
+      <img src="./assets/images/ロゴ.png" alt="hangman ロゴ" class="center"> 
+      <div class="instructions">
+        <br>
+        <p>Word Guess Game ゲームを推測する</p>
+        <p>Press <strong>spacebar</strong> to start.</p>
+        <p>&copy; Copyright 2018 Jack Yang</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="win" class="hide">
+    <div class="message">
+      
+      <div class="text">
+          <div id="victory"><img src="./assets/images/victory.png" alt="victory"></div>
+        <p>Nice! You guessed <span id="wordSolved">"LONGWORD"</span> with <span id="turnsLeft">0</span> turns to spare.</p>
+        <p>Press <strong>spacebar</strong> to play again!</p>
+      </div>
+    </div>
+  </div> 
+
+  <div id="lose" class="hide">
+    <div class="message">
+      <div class="text">
+        <p>You lost.</p>
+        <div><img src="./assets/images/lose.gif" alt="lose"></div>
+        <p>Press <strong>spacebar</strong> to try again!</p>
+      </div>
+    </div>
+  </div> 
+
+  <div id="items">
+    <div id="character">
+    </div>
+
+    <div id="turns-ghost">00:00</div>
+    <div id="turns"></div>
+
+    <div id="guess">
+      <table id="word" class="table-bordered text-primary">
+        <tr id="blanks">
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="error" class="hide"></div>
+
+    <div id="guess-ghost">
+      <table id="word-ghost" class="table-bordered text-letter">
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="guessed"></div>
+    <div id="wins"></div>
+
+  </div> 
+
+</div> 
+
+<script src="./assets/javascript/game.js" charset="utf-8"></script>
+
+
+<footer class="footer">
+</footer>
+
+</body>
+</html>
