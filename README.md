@@ -7,6 +7,8 @@ This is a simple Word Guess Game, runs in the browser, and features dynamically 
 ![](assets/images/readme.png)
 ![](assets/images/readme2.png)
 
+<a href="https://jackjoeng.github.io/Hangman-Game">Check it out!</a>
+
 ### Assignment Instruction
 
 1. Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
